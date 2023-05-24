@@ -49,12 +49,12 @@ namespace Lab12_Calculator
             this.buttonLeftBracket = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonClearEntry = new System.Windows.Forms.Button();
-            this.textBoxOutput = new System.Windows.Forms.Panel();
+            this.textBoxOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 92);
+            this.button1.Location = new System.Drawing.Point(12, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 42);
             this.button1.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace Lab12_Calculator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(74, 92);
+            this.button2.Location = new System.Drawing.Point(74, 38);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 42);
             this.button2.TabIndex = 1;
@@ -74,7 +74,7 @@ namespace Lab12_Calculator
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(136, 92);
+            this.button3.Location = new System.Drawing.Point(136, 38);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 42);
             this.button3.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace Lab12_Calculator
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 140);
+            this.button4.Location = new System.Drawing.Point(12, 86);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 42);
             this.button4.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace Lab12_Calculator
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(74, 140);
+            this.button5.Location = new System.Drawing.Point(74, 86);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 42);
             this.button5.TabIndex = 4;
@@ -104,7 +104,7 @@ namespace Lab12_Calculator
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(136, 140);
+            this.button6.Location = new System.Drawing.Point(136, 86);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(56, 42);
             this.button6.TabIndex = 5;
@@ -114,7 +114,7 @@ namespace Lab12_Calculator
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 188);
+            this.button7.Location = new System.Drawing.Point(12, 134);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(56, 42);
             this.button7.TabIndex = 6;
@@ -124,7 +124,7 @@ namespace Lab12_Calculator
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(74, 188);
+            this.button8.Location = new System.Drawing.Point(74, 134);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(56, 42);
             this.button8.TabIndex = 7;
@@ -134,7 +134,7 @@ namespace Lab12_Calculator
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(136, 188);
+            this.button9.Location = new System.Drawing.Point(136, 134);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(56, 42);
             this.button9.TabIndex = 8;
@@ -144,7 +144,7 @@ namespace Lab12_Calculator
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(74, 236);
+            this.button0.Location = new System.Drawing.Point(74, 182);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(56, 42);
             this.button0.TabIndex = 9;
@@ -154,7 +154,7 @@ namespace Lab12_Calculator
             // 
             // buttonAddition
             // 
-            this.buttonAddition.Location = new System.Drawing.Point(283, 188);
+            this.buttonAddition.Location = new System.Drawing.Point(283, 134);
             this.buttonAddition.Name = "buttonAddition";
             this.buttonAddition.Size = new System.Drawing.Size(56, 42);
             this.buttonAddition.TabIndex = 10;
@@ -164,7 +164,7 @@ namespace Lab12_Calculator
             // 
             // buttonSubtraction
             // 
-            this.buttonSubtraction.Location = new System.Drawing.Point(345, 188);
+            this.buttonSubtraction.Location = new System.Drawing.Point(345, 134);
             this.buttonSubtraction.Name = "buttonSubtraction";
             this.buttonSubtraction.Size = new System.Drawing.Size(56, 42);
             this.buttonSubtraction.TabIndex = 11;
@@ -174,7 +174,7 @@ namespace Lab12_Calculator
             // 
             // buttonMultiplication
             // 
-            this.buttonMultiplication.Location = new System.Drawing.Point(283, 236);
+            this.buttonMultiplication.Location = new System.Drawing.Point(283, 182);
             this.buttonMultiplication.Name = "buttonMultiplication";
             this.buttonMultiplication.Size = new System.Drawing.Size(56, 42);
             this.buttonMultiplication.TabIndex = 12;
@@ -184,7 +184,7 @@ namespace Lab12_Calculator
             // 
             // buttonDivision
             // 
-            this.buttonDivision.Location = new System.Drawing.Point(345, 236);
+            this.buttonDivision.Location = new System.Drawing.Point(345, 182);
             this.buttonDivision.Name = "buttonDivision";
             this.buttonDivision.Size = new System.Drawing.Size(56, 42);
             this.buttonDivision.TabIndex = 13;
@@ -194,7 +194,7 @@ namespace Lab12_Calculator
             // 
             // buttonDecPoint
             // 
-            this.buttonDecPoint.Location = new System.Drawing.Point(221, 140);
+            this.buttonDecPoint.Location = new System.Drawing.Point(221, 86);
             this.buttonDecPoint.Name = "buttonDecPoint";
             this.buttonDecPoint.Size = new System.Drawing.Size(56, 42);
             this.buttonDecPoint.TabIndex = 14;
@@ -205,7 +205,7 @@ namespace Lab12_Calculator
             // buttonEquals
             // 
             this.buttonEquals.BackColor = System.Drawing.Color.Gold;
-            this.buttonEquals.Location = new System.Drawing.Point(221, 92);
+            this.buttonEquals.Location = new System.Drawing.Point(221, 38);
             this.buttonEquals.Name = "buttonEquals";
             this.buttonEquals.Size = new System.Drawing.Size(56, 42);
             this.buttonEquals.TabIndex = 15;
@@ -215,7 +215,7 @@ namespace Lab12_Calculator
             // 
             // buttonRightBracket
             // 
-            this.buttonRightBracket.Location = new System.Drawing.Point(345, 140);
+            this.buttonRightBracket.Location = new System.Drawing.Point(345, 86);
             this.buttonRightBracket.Name = "buttonRightBracket";
             this.buttonRightBracket.Size = new System.Drawing.Size(56, 42);
             this.buttonRightBracket.TabIndex = 16;
@@ -225,7 +225,7 @@ namespace Lab12_Calculator
             // 
             // buttonLeftBracket
             // 
-            this.buttonLeftBracket.Location = new System.Drawing.Point(283, 140);
+            this.buttonLeftBracket.Location = new System.Drawing.Point(283, 86);
             this.buttonLeftBracket.Name = "buttonLeftBracket";
             this.buttonLeftBracket.Size = new System.Drawing.Size(56, 42);
             this.buttonLeftBracket.TabIndex = 17;
@@ -236,7 +236,7 @@ namespace Lab12_Calculator
             // buttonClear
             // 
             this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonClear.Location = new System.Drawing.Point(283, 93);
+            this.buttonClear.Location = new System.Drawing.Point(283, 39);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(56, 42);
             this.buttonClear.TabIndex = 18;
@@ -247,7 +247,7 @@ namespace Lab12_Calculator
             // buttonClearEntry
             // 
             this.buttonClearEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonClearEntry.Location = new System.Drawing.Point(345, 92);
+            this.buttonClearEntry.Location = new System.Drawing.Point(345, 38);
             this.buttonClearEntry.Name = "buttonClearEntry";
             this.buttonClearEntry.Size = new System.Drawing.Size(56, 42);
             this.buttonClearEntry.TabIndex = 19;
@@ -257,19 +257,16 @@ namespace Lab12_Calculator
             // 
             // textBoxOutput
             // 
-            this.textBoxOutput.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxOutput.Enabled = false;
             this.textBoxOutput.Location = new System.Drawing.Point(12, 12);
             this.textBoxOutput.Name = "textBoxOutput";
-            this.textBoxOutput.Size = new System.Drawing.Size(389, 74);
+            this.textBoxOutput.Size = new System.Drawing.Size(388, 20);
             this.textBoxOutput.TabIndex = 20;
-            this.textBoxOutput.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 288);
+            this.ClientSize = new System.Drawing.Size(413, 236);
             this.Controls.Add(this.textBoxOutput);
             this.Controls.Add(this.buttonClearEntry);
             this.Controls.Add(this.buttonClear);
@@ -295,6 +292,7 @@ namespace Lab12_Calculator
             this.Text = "Form1";
             this.Click += new System.EventHandler(this.button_Click);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -320,7 +318,7 @@ namespace Lab12_Calculator
         private System.Windows.Forms.Button buttonLeftBracket;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonClearEntry;
-        private System.Windows.Forms.Panel textBoxOutput;
+        private System.Windows.Forms.TextBox textBoxOutput;
     }
 }
 

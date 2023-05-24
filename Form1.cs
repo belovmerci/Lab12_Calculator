@@ -20,6 +20,7 @@ namespace Lab12_Calculator
         private void button_Click(object sender, EventArgs e)
         {
             // This adds value to calculation
+            // currentCalculation += (Button as sender).Text;
             currentCalculation += (sender as Button).Text;
             textBoxOutput.Text = currentCalculation;
         }
