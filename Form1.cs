@@ -16,7 +16,7 @@ namespace Lab12_Calculator
             InitializeComponent();
         }
 
-
+        // Button 1: numbers
         private void button_Click(object sender, EventArgs e)
         {
             // This adds value to calculation
@@ -24,37 +24,42 @@ namespace Lab12_Calculator
             currentCalculation += (sender as Button).Text;
             textBoxOutput.Text = currentCalculation;
         }
-
-        private void button_Equals_Click(object sender, EventArgs e)
-        {
-            string formattedCalculation = currentCalculation.ToString().Replace("X", "*").ToString().Replace("&divide;", "/");
-
-            try
-            {
-                textBoxOutput.Text = new DataTable().Compute(formattedCalculation, null).ToString();
-                currentCalculation = textBoxOutput.Text;
-            }
-            catch (Exception ex)
-            {
-                textBoxOutput.Text = "0";
-                currentCalculation = "";
-                Console.WriteLine($"Caught {ex} exception");
-            }
-        }
+        // Button 2: actions
         private void button_Clear_Click(object sender, EventArgs e)
         {
-            // Reset calculation & empty the textbox
-            textBoxOutput.Text = "0";
-            currentCalculation = "";
-        }
-        private void button_ClearEntry_Click(object sender, EventArgs e)
-        {
-            // If calculation is not empty, remove last character entered
-            if (currentCalculation.Length > 0)
+            if ((sender as Button).Text == "C")
             {
-                currentCalculation = currentCalculation.Remove(currentCalculation.Length - 1, 1);
+                // Reset calculation & empty the textbox
+                textBoxOutput.Text = "0";
+                currentCalculation = "";
             }
-            textBoxOutput.Text = currentCalculation;
+            else if ((sender as Button).Text == "=")
+            {
+                string formattedCalculation = currentCalculation.ToString().Replace("X", "*").ToString().Replace("&divide;", "/");
+
+                try
+                {
+                    // System.Data allows for such computation
+                    textBoxOutput.Text = new DataTable().Compute(formattedCalculation, null).ToString();
+                    currentCalculation = textBoxOutput.Text;
+                }
+                catch (Exception ex)
+                {
+                    textBoxOutput.Text = "0";
+                    currentCalculation = "";
+                    Console.WriteLine($"Caught {ex} exception");
+                }
+            }
+            else // should only be CE, but good to have it catch all
+            {
+                // If calculation is not empty, remove last character entered
+                if (currentCalculation.Length > 0)
+                {
+                    currentCalculation = currentCalculation.Remove(currentCalculation.Length - 1, 1);
+                }
+                else currentCalculation = "0";
+                textBoxOutput.Text = currentCalculation;
+            }
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
